@@ -1,0 +1,42 @@
+# Projeto de Auditoria Simulada: Beneficiários de Programas Sociais
+
+## Objetivo
+Este projeto tem como objetivo simular um **teste de auditoria** destinado a identificar clientes fictícios que sejam beneficiários de programas sociais, utilizando como base de comparação os **dados públicos reais do Governo Federal**.  
+O exercício demonstra a relevância desse cruzamento para a **classificação de risco em PLD/FT**.  
+
+---
+
+## Contexto e Relevância
+Beneficiários de programas sociais, como Bolsa Família ou BPC, geralmente apresentam:  
+- Renda compatível com valores reduzidos;  
+- Movimentações financeiras de natureza governamental.  
+
+Essa informação é relevante para:  
+1. **Conhecer o Cliente (KYC)** – definir o perfil econômico esperado e estabelecer parâmetros de monitoramento.  
+2. **Detecção de Incompatibilidades** – identificar movimentações muito acima da renda declarada ou incompatíveis com benefícios recebidos.  
+3. **Cumprimento Regulatória** – atender às exigências do Banco Central e da Lei nº 9.613/1998 quanto à avaliação da origem e compatibilidade dos recursos.  
+
+⚠️ Importante: **ser beneficiário de programas sociais não implica, por si só, risco elevado**, mas é um dado essencial para calibrar o perfil do cliente e detectar atividades fora do padrão esperado.  
+
+---
+
+## Metodologia (simulada)
+1. Construção no ChatGPT de uma base fictícia de **clientes** (nome, CPF, cidade, risco atual).   
+2. **Base pública de beneficiários** – obtida por meio da **API oficial do Governo Federal (Cadastro Único / Programas Sociais)**, que disponibiliza dados de beneficiários de programas como Bolsa Família e BPC.  
+3. **Normalização de dados** – padronização de CPFs (somente dígitos) e eliminação de ruídos.  
+4. **Cruzamento entre bases** – identificação de clientes fictícios que constam na lista real de beneficiários.  
+5. **Geração de relatório** – consolidação dos achados em CSV e resumo de indicadores.  
+
+---
+
+## Resultados Esperados
+- Percentual de clientes identificados como beneficiários.  
+- Associação entre cliente fictício e programa social real.  
+- Relatório executivo com indicadores e exemplos.  
+
+---
+
+## Conclusão
+Este projeto exemplifica como a **digitalização de testes de auditoria** pode apoiar a área de PLD/FT na identificação de características relevantes do cliente, fortalecendo processos de **KYC, monitoramento de operações e cumprimento regulatório**.  
+
+---
